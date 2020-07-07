@@ -51,7 +51,7 @@ you should then see output like this:
 Args passed:['./sign.py', 'dummybank.rowit.co.uk', './key.pem', 'batch-sign.py']
 hash String:6ddb25c37e4851709a9116f8357673010dd12c05eb2ac4cc9a2f682ae8d4f8b2
 Signature:L4fyqF07vchmiVe8xIqJ6NmJP4a4gVUsC0bIO7t8jYdDC6gjGOWxz0fHlDP6t5hjdog2H4b/1k/j/y34UUhanwnmehmPq0HL9QYDVFU3e4VRm3xdosm8PtVdM+XUkFtJ8FW23/7kcv5faSEKGdMSygRjT841XJ+VXnoeSkg2m9kGhQsM5KEtYqUQvqT1vLi7zKIuHkKb86a6V7sP7YSBOHV/rVx4koPLoMbUw+ZPlbsrtbpm3+fQPv9Anm/43U5SLvLEhrnhqavMIOauzl2/Whjg65mt6RysrpZXGETlyb1EmJprL1xB5d7uzzE/CdgdywxYyq1SDDh4hiOwjBGP7g==
-b'signed OK lightningconductor.net 6ddb25c37e4851709a9116f8357673010dd12c05eb2ac4cc9a2f682ae8d4f8b2 L4fyqF07vchmiVe8xIqJ6NmJP4a4gVUsC0bIO7t8jYdDC6gjGOWxz0fHlDP6t5hjdog2H4b/1k/j/y34UUhanwnmehmPq0HL9QYDVFU3e4VRm3xdosm8PtVdM+XUkFtJ8FW23/7kcv5faSEKGdMSygRjT841XJ+VXnoeSkg2m9kGhQsM5KEtYqUQvqT1vLi7zKIuHkKb86a6V7sP7YSBOHV/rVx4koPLoMbUw+ZPlbsrtbpm3+fQPv9Anm/43U5SLvLEhrnhqavMIOauzl2/Whjg65mt6RysrpZXGETlyb1EmJprL1xB5d7uzzE/CdgdywxYyq1SDDh4hiOwjBGP7g=='
+b'signed OK dummybank.rowit.co.uk 6ddb25c37e4851709a9116f8357673010dd12c05eb2ac4cc9a2f682ae8d4f8b2 L4fyqF07vchmiVe8xIqJ6NmJP4a4gVUsC0bIO7t8jYdDC6gjGOWxz0fHlDP6t5hjdog2H4b/1k/j/y34UUhanwnmehmPq0HL9QYDVFU3e4VRm3xdosm8PtVdM+XUkFtJ8FW23/7kcv5faSEKGdMSygRjT841XJ+VXnoeSkg2m9kGhQsM5KEtYqUQvqT1vLi7zKIuHkKb86a6V7sP7YSBOHV/rVx4koPLoMbUw+ZPlbsrtbpm3+fQPv9Anm/43U5SLvLEhrnhqavMIOauzl2/Whjg65mt6RysrpZXGETlyb1EmJprL1xB5d7uzzE/CdgdywxYyq1SDDh4hiOwjBGP7g=='
 ```
 
 The "signed OK" signifies that the signature was correct and it was a new file.
@@ -67,7 +67,7 @@ Please just create a pull request and we will review and merge.
 
 ## Authors
 
-* **Robin Owens** - *Initial work* - [Umpint](https://github.com/Umpint)
+* **Robin Owens** - *Initial work* - [umpint](https://github.com/umpint)
 
 ## License
 
