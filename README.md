@@ -30,9 +30,9 @@ cd python-api
 
 ### Running
 
-We have at dummybank.rowit.co.uk a dummy site you can use for testing. Since we only use if for testing we allow you to download the Certificate Private Key. Nobody should normally every allow this - as makes https pointless.
+We have at dummybank.co.uk a dummy site you can use for testing. Since we only use if for testing we allow you to download the Certificate Private Key. Nobody should normally every allow this - as makes https pointless.
 
-You can download from: dummybank.rowit.co.uk/key.pem 
+You can download from: dummybank.co.uk/notnormallpublic/privkey.pem 
 
 Note this file changes every few months so you may have to download again if you start getting certificate errors.
 
@@ -40,18 +40,18 @@ Place this file in the bash-api directory.
 
 To sign an individual file run:
 ```
-wget https://dummybank.rowit.co.uk/key.pem
+wget https://dummybank.co.uk/key.pem
 # 1st edit the file testfile.sh and make random change to it so it is unique
-./sign.py dummybank.rowit.co.uk ./key.pem testfile.txt
+./sign.py dummybank.co.uk ./key.pem testfile.txt
 ```
 
 you should then see output like this:
 
 ```
-Args passed:['./sign.py', 'dummybank.rowit.co.uk', './key.pem', 'batch-sign.py']
+Args passed:['./sign.py', 'dummybank.co.uk', './privkey.pem', 'testfile.txt']
 hash String:6ddb25c37e4851709a9116f8357673010dd12c05eb2ac4cc9a2f682ae8d4f8b2
 Signature:L4fyqF07vchmiVe8xIqJ6NmJP4a4gVUsC0bIO7t8jYdDC6gjGOWxz0fHlDP6t5hjdog2H4b/1k/j/y34UUhanwnmehmPq0HL9QYDVFU3e4VRm3xdosm8PtVdM+XUkFtJ8FW23/7kcv5faSEKGdMSygRjT841XJ+VXnoeSkg2m9kGhQsM5KEtYqUQvqT1vLi7zKIuHkKb86a6V7sP7YSBOHV/rVx4koPLoMbUw+ZPlbsrtbpm3+fQPv9Anm/43U5SLvLEhrnhqavMIOauzl2/Whjg65mt6RysrpZXGETlyb1EmJprL1xB5d7uzzE/CdgdywxYyq1SDDh4hiOwjBGP7g==
-b'signed OK dummybank.rowit.co.uk 6ddb25c37e4851709a9116f8357673010dd12c05eb2ac4cc9a2f682ae8d4f8b2 L4fyqF07vchmiVe8xIqJ6NmJP4a4gVUsC0bIO7t8jYdDC6gjGOWxz0fHlDP6t5hjdog2H4b/1k/j/y34UUhanwnmehmPq0HL9QYDVFU3e4VRm3xdosm8PtVdM+XUkFtJ8FW23/7kcv5faSEKGdMSygRjT841XJ+VXnoeSkg2m9kGhQsM5KEtYqUQvqT1vLi7zKIuHkKb86a6V7sP7YSBOHV/rVx4koPLoMbUw+ZPlbsrtbpm3+fQPv9Anm/43U5SLvLEhrnhqavMIOauzl2/Whjg65mt6RysrpZXGETlyb1EmJprL1xB5d7uzzE/CdgdywxYyq1SDDh4hiOwjBGP7g=='
+b'signed OK dummybank.co.uk 6ddb25c37e4851709a9116f8357673010dd12c05eb2ac4cc9a2f682ae8d4f8b2 L4fyqF07vchmiVe8xIqJ6NmJP4a4gVUsC0bIO7t8jYdDC6gjGOWxz0fHlDP6t5hjdog2H4b/1k/j/y34UUhanwnmehmPq0HL9QYDVFU3e4VRm3xdosm8PtVdM+XUkFtJ8FW23/7kcv5faSEKGdMSygRjT841XJ+VXnoeSkg2m9kGhQsM5KEtYqUQvqT1vLi7zKIuHkKb86a6V7sP7YSBOHV/rVx4koPLoMbUw+ZPlbsrtbpm3+fQPv9Anm/43U5SLvLEhrnhqavMIOauzl2/Whjg65mt6RysrpZXGETlyb1EmJprL1xB5d7uzzE/CdgdywxYyq1SDDh4hiOwjBGP7g=='
 ```
 
 The "signed OK" signifies that the signature was correct and it was a new file.
