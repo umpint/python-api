@@ -32,7 +32,7 @@ cd python-api
 
 We have at dummybank.co.uk a dummy site you can use for testing. Since we only use if for testing we allow you to download the Certificate Private Key. Nobody should normally every allow this - as makes https pointless.
 
-You can download from: dummybank.co.uk/notnormallpublic/privkey.pem 
+You can download from: dummybank.co.uk/notnormallypublic/privkey.pem 
 
 Note this file changes every few months so you may have to download again if you start getting certificate errors.
 
@@ -40,9 +40,9 @@ Place this file in the bash-api directory.
 
 To sign an individual file run:
 ```
-wget https://dummybank.co.uk/notnormallpublic/privkey.pem
+wget https://dummybank.co.uk/notnormallypublic/privkey.pem
 # 1st edit the file testfile.sh and make random change to it so it is unique
-./sign.py dummybank.co.uk ./key.pem testfile.txt
+./sign.py dummybank.co.uk ./privkey.pem testfile.txt
 ```
 
 you should then see output like this:
