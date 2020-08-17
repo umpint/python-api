@@ -40,7 +40,7 @@ Place this file in the bash-api directory.
 
 To sign an individual file run:
 ```
-wget https://dummybank.co.uk/key.pem
+wget https://dummybank.co.uk/notnormallpublic/privkey.pem
 # 1st edit the file testfile.sh and make random change to it so it is unique
 ./sign.py dummybank.co.uk ./key.pem testfile.txt
 ```
